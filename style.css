@@ -1,21 +1,25 @@
 body {
-	font-family: Arial;
+	font-family: Voga;
 	color: rgb(125, 140, 155);
 }
 
 h1 {
-	font-size: 300%;	
+	font-size: 300%;
+  text-align:center;
 }
 
 h1,
 h2 {
 	color: rgb(76, 44, 104);
 	text-transform: uppercase;
-	font-weight: 100;
+	font-weight: 120;
 }
 
 img {
-	width: 100%;
+	width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 footer{
