@@ -1,5 +1,5 @@
 #container{
-    width:60%;
+    width:65%;
     margin:auto;
 }
 
@@ -13,9 +13,9 @@
 }
 
 body{
-	font-family: garamond, serif;
+	font-family: bookman antiqua, palatino, serif;
 	color: black;
-    background-color: rgb(251, 238, 220);
+    background-color: rgb(251, 248, 244);
 }
 
 h1{
