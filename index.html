@@ -3,14 +3,13 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    
     <title>Tea Recipe</title>
-    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
 	<body>
-		
-		<header>
+		<div id="container">
+		   <header>
 			<h1>How To Make Tea</h1>
 			<img src="https://cdn.discordapp.com/attachments/989274756341706822/1129090205241049218/aleksa_tyt_high_image_detail_photorealism_two_cups_are_cooling__fd8f5038-8c40-4c5c-8752-2c8af0d482d0.png" alt="tea in glass cups with lime and mint garnish">
 
@@ -19,8 +18,8 @@
             </p>
 		</header>
 		
-		<section>
-			<h2>Ingredients</h2>
+		   <section id="ingredients" onmouseover="ingredientsHover()" onmouseout="ingredientsNormal()">
+			<h2>Ingredients <i class="fa fa-coffee" aria-hidden= "true"></i> </h2>
 			<ul>
 				<li>Tea Bag</li>
 				<li>Water</li>
@@ -29,20 +28,20 @@
 			</ul>
 		</section>
 		
-		<section>
-			<h2>Preparation</h2>
+		   <section id="preparation" onmouseover="preparationHover()" onmouseout="preparationNormal()">
+			<h2>Preparation <i class="fa fa-list" aria-hidden="true"></i></h2>
 			<ol>
 				<li>
                 Run the tap a little so the water is nicely aerated, and only boil the kettle once to keep the oxygen levels up - oxygen in water helps flavour!
 				</li>
 				<li>
-					Place a tea bag into your (<em>favourite</em> mug)
+					Place a tea bag into your <em>favourite</em> mug
 				</li>
 				<li>
 					Pour the hot water over the tea bag and stir briefly.
 				</li>
 				<li>
-					Tea needs time to unlock all it's flavour, so allow the teabag to steep for 3-4 minutes. This is a perfect chance to grab a sneaky cookie or daydream about having tea on holiday instead at the office or home!
+					Tea needs time to unlock all it's flavour, so allow the teabag to steep for <strong>3-4 minutes</strong>. This is a perfect chance to grab a sneaky cookie or daydream about having tea on holiday instead at the office or home!
 				</li>
 				<li>
 					Before removing the tea bag, gently squish it with a spoon against the side of the mug - be gentle, too much pressure will make the tea bitter.
@@ -55,11 +54,23 @@
 				</li>
 			</ol>
 		</section>
-		
-		<footer>
-			<p>Copyright 2023</p>
-		</footer>
-
-		<script src="script.js"></script>
-	</body>
+		   <footer>
+			  <p>Copyright 2023</p>
+		   </footer>
+    </div>
+		<script>
+		function ingredientsHover(){
+		    document.getElementById("ingredients").style.fontSize = "130%";
+		}
+		function ingredientsNormal(){
+		    document.getElementById("ingredients").style.fontSize = "100%"
+		}
+		function preparationHover(){
+		    document.getElementById("preparation").style.fontSize = "130%";
+		}
+		function preparationNormal(){
+		    document.getElementById("preparation").style.fontSize = "100%";
+		}
+    </script>
+  </body>
 </html>
